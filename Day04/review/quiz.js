@@ -12,7 +12,13 @@
 // 구매하신 제품: 영화:[~~~], 스낵류: [~~~], 음료: [~~~]
 // 총 가격: ~~입니다.
 
-const movie = ["보통의 가족", "베놈", "베테랑2", "와일드 로봇", "대도시의 사랑법"];
+const movie = [
+  "보통의 가족",
+  "베놈",
+  "베테랑2",
+  "와일드 로봇",
+  "대도시의 사랑법",
+];
 const snacks = ["팝콘", "캬라멜팝콘", "치즈팝콘", "나쵸", "오징어구이"];
 const beverages = ["콜라", "제로콜라", "스프라이트", "제로스프라이트"];
 
@@ -21,11 +27,20 @@ const selectedSnack = Number(prompt(snacks + " 번호입력"));
 const selectedBeverages = Number(prompt(beverages + " 번호입력"));
 
 const deterSnackPrice = (snack) => {
-    return snack.includes("팝콘") ? 6000 : 4000;
+  return snack.includes("팝콘") ? 6000 : 4000;
 };
 
 const deterBeveragePrice = (snack) => {
-    return snack.includes("콜라") ? 3000 : 2000;
+  return snack.includes("콜라") ? 3000 : 2000;
 };
 
-console.log(`구매하신 제품: 영화:${movie[selectedMovie]}, 스낵류: ${snacks[selectedSnack]}, 음료:${beverages[selectedBeverages]}`)
+console.log(
+  `구매하신 제품: 영화:${movie[selectedMovie]}, 스낵류: ${snacks[selectedSnack]}, 음료:${beverages[selectedBeverages]}`
+);
+console.log(
+  `총 가격: ${
+    12000 +
+    deterSnackPrice(snacks[selectedSnack]) +
+    deterBeveragePrice(beverages[selectedBeverage])
+  }입니다.`
+);
