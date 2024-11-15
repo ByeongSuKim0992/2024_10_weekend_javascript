@@ -5,9 +5,10 @@ const pallete = makePallete();
 colors.forEach((v) => pallete.appendChild(makeColor(v)));
 document.body.appendChild(pallete);
 
-// const pallete = document.createElement("section");
+// const pallete = document.createElement("section"); // 아래 한 줄 요약
+// const pallete = makePallete();
 // pallete.style.cssText =
-//   "width:100vw;height:100vh;display:flex; grid-template-columns:(repeat 5, 1fr)";
+//   "width:100vw;height:100vh;display:flex; grid-template-columns:repeat (5, 1fr)";
 //// .func.js로 옮기고
 
 // const color = [
@@ -48,6 +49,11 @@ document.body.appendChild(pallete);
 // };
 // .func.js로 옮기고
 
+// color.forEach((v) => {
+//   const colorBox = makeColor(v);
+//   pallete.appendChild(colorBox);
+// });
+// 아래로 변경
 // color.forEach((v) => pallete.appendChild(makeColor(v)));
 
 // document.body.appendChild(pallete);

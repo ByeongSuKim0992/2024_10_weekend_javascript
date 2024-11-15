@@ -1,3 +1,28 @@
+// const position = [
+//   "positiony",
+//   "z-index",
+//   "top",
+//   "button",
+//   "right",
+//   "Flexbox properties",
+//   "float",
+//   "clear",
+// ];
+// const display = ["display", "opacity", "transform"];
+// const clipping = ["overflow", "clipping"];
+// const animation = ["animation", "transition"];
+// const box = [
+//   "margin",
+//   "box-shadow",
+//   "boder",
+//   "boder-radius",
+//   "box-sizing",
+//   "width",
+//   "height",
+//   "padding",
+// ];
+//data.js 옮김
+
 // const container = document.createElement("section");
 // container.style.cssText = "display:flex; flex-direction:column; gap:10px";
 // const h4Tag = document.createElement("h4");
