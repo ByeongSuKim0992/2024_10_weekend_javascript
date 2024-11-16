@@ -1,43 +1,49 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="index.css" />
-    <script src="index.js"></script>
+    <script src="index.js" defer></script>
   </head>
   <body>
-    <section class="container">
-      <div class="agree">
+    <section class="agreement">
+      <div class="checkLabel">
         <input id="all" type="checkbox" />
         <span>전체 동의</span>
       </div>
-      <div class="individual">
-        <input id="indi" type="checkbox" />
-        <span>[필수] 개인정보처리 지침</span>
+      <div class="checkLabel">
+        <input id="policy" type="checkbox" />
+        <span><span class="necessary">(필수)</span>개인정보처리방침</span>
       </div>
-      <div class="serviceClause">
-        <input id="svc1" type="checkbox" />
-        <span>[필수] 서비스 이용 약관</span>
+      <div class="checkLabel">
+        <input id="service" type="checkbox" />
+        <span><span class="necessary">(필수)</span>서비스 이용약관</span>
       </div>
-      <div class="serviceIndividual">
-        <input id="svc2" type="checkbox" />
-        <span>[필수] 서비스 이용 약관</span>
+      <div class="checkLabel">
+        <input id="consent" type="checkbox" />
+        <span
+          ><span class="necessary">(필수)</span>서비스 개인정보 수집 이용
+          동의</span
+        >
       </div>
-      <div class="age14Over">
-        <input id="age14" type="checkbox" />
-        <span>[필수] 만 14세 이상임을 확인합니다.</span>
+      <div class="checkLabel">
+        <input id="years" type="checkbox" />
+        <span
+          ><span class="necessary">(필수)</span>만 14세 이상임을
+          확인합니다.</span
+        >
       </div>
-      <div class="serviceIndividual">
-        <input id="svcindi" type="checkbox" />
-        <span>[선택] 서비스 개인정보 수집 이용 동의</span>
+      <div class="checkLabel">
+        <input id="private" type="checkbox" />
+        <span><span>(선택)</span>서비스 개인정보 수집 이용 동의</span>
       </div>
-      <div class="serviceMarketing">
-        <input id="svcmar" type="checkbox" />
-        <span>[선택] 서비스 마케팅 정보 수신 동의</span>
+      <div class="checkLabel">
+        <input id="marketing" type="checkbox" />
+        <span><span>(선택)</span>서비스 마케팅 정보 수신 동의</span>
       </div>
-      <button class="confirm">확인</button>
+      <button id="checkButton" class="button notChecked">확인</button>
     </section>
   </body>
 </html>

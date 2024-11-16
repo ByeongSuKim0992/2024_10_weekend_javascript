@@ -1,0 +1,26 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.button {
+  padding: 12px 35px;
+  border: none;
+  border-radius: 40px;
+  color: white;
+  font-size: 18px;
+}
+
+.seaBlue {
+  background-color: #2563eb;
+}
+.deepBlue {
+  background-color: #1d4ed8;
+}
+.white {
+  background-color: white;
+}
+.ligthBlue {
+  background-color: #dbeafe;
+}

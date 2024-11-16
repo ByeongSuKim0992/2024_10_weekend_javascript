@@ -1,16 +1,31 @@
-.container {
-  width: 300px;
-  height: 200px;
-  background-color: black;
-  color: white;
-  gap: 25px;
+.agreement {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
-span {
-  font-size: 12px;
+
+.checkLabel {
+  display: flex;
+  gap: 3px;
 }
-button {
-  border-radius: 5px;
-  margin: 20px 10px;
-  width: 250px;
-  height: 25px;
+
+.checkLabel > span {
+  color: #444444;
+}
+
+.necessary {
+  color: #ffd900;
+}
+
+.button {
+  padding: 10px 50px;
+  border: none;
+  border-radius: 40px;
+}
+
+.checked {
+  background-color: #ffd900;
+}
+.notChecked {
+  background-color: #444444;
 }
